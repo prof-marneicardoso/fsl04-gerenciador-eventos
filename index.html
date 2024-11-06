@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Eventos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h2>Gerenciador de Eventos</h2>
+
+            <p>Organize e acompanhe seus eventos facilmente</p>
+        </header>
+
+        <section class="event-form">
+            <form id="formularioEvento">
+                <div class="input-group">
+                    <label for="nomeEvento">Nome do evento</label>
+                    <input type="text" id="nomeEvento" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="dataEvento">Data do evento</label>
+                    <input type="date" id="dataEvento" required>
+                </div>
+
+                <button type="submit">Adicionar Evento</button>
+            </form>
+        </section>
+
+        <hr>
+        <section>
+            <h3>Eventos Agendados</h3>
+            
+            <div class="event-list">
+                <ul id="listaEventos">
+                    <!-- Os eventos serão adicionados aqui por JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- JS -->
+<script src="./js/app.js"></script>
+</html>
